@@ -1,0 +1,11 @@
+.vm-card {
+  background: white;
+  border-radius: $base-radius;
+  box-shadow: 0 2px 4px 0 #D3D3D3;
+}
+
+.vm-card-edit {
+  border-radius: $base-radius;
+  box-shadow: none;
+  outline: .2rem dashed #F4F3F3;
+}

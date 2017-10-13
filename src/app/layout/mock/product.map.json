@@ -1,0 +1,384 @@
+{
+  "map": [
+    {
+      "group": "Gestão empresarial | ERP",
+      "products": [
+        {
+          "name": "Compliance",
+          "checked": false
+        },
+        {
+          "name": "Finanças",
+          "checked": false
+        },
+        {
+          "name": "Manufatura",
+          "checked": false
+        },
+        {
+          "name": "Suprimentos",
+          "checked": false
+        },
+        {
+          "name": "Qualidade",
+          "checked": false
+        },
+        {
+          "name": "Vendas",
+          "checked": false
+        },
+        {
+          "name": "Serviços",
+          "checked": false
+        },
+        {
+          "name": "Documentos eletrônicos eDocs",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Gestão empresarial PME | GO UP ",
+      "products": [
+        {
+          "name": "Mercado",
+          "checked": false
+        },
+        {
+          "name": "Manufatura",
+          "checked": false
+        },
+        {
+          "name": "Finanças",
+          "checked": false
+        },
+        {
+          "name": "Controladoria",
+          "checked": false
+        },
+        {
+          "name": "Suprimentos",
+          "checked": false
+        },
+        {
+          "name": "Compliance",
+          "checked": false
+        },
+        {
+          "name": "Documentos eletrônicos eDocs",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Gestão de pessoas | HCM",
+      "products": [
+        {
+          "name": "Painel de Gestão",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Talentos",
+          "checked": false
+        },
+        {
+          "name": "Administração de Pessoal",
+          "checked": false
+        },
+        {
+          "name": "Gestão da Remuneração",
+          "checked": false
+        },
+        {
+          "name": "Ponto",
+          "checked": false
+        },
+        {
+          "name": "Saúde e Segurança",
+          "checked": false
+        },
+        {
+          "name": "Planejamento de Pessoal",
+          "checked": false
+        },
+        {
+          "name": "ESOCIAL | Soluções da Senior",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Gestão de logística | WMS TMS",
+      "products": [
+        {
+          "name": "Gestão de Armazenagem | WMS",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Fretes | FIS",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Transportes | TMS",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Frotas | FMS",
+          "checked": false
+        },
+        {
+          "name": "Monitoramento de Entregas",
+          "checked": false
+        },
+        {
+          "name": "Picking by voice Mobile",
+          "checked": false
+        },
+        {
+          "name": "Check list de Veículos",
+          "checked": false
+        },
+        {
+          "name": "Cliente Final",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Gestão de relacionamento | CRM",
+      "products": [
+        {
+          "name": "Estratégia de Negócios",
+          "checked": false
+        },
+        {
+          "name": "Informações do cliente",
+          "checked": false
+        },
+        {
+          "name": "Cultura Organizacional",
+          "checked": false
+        },
+        {
+          "name": "Tecnologia",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Gestão de acesso e segurança ",
+      "products": [
+        {
+          "name": "Portaria de Acesso de Pessoas",
+          "checked": false
+        },
+        {
+          "name": "Controle de Acesso",
+          "checked": false
+        },
+        {
+          "name": "Portaria de Acesso de Veículos",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Veículos da Frota",
+          "checked": false
+        },
+        {
+          "name": "Supervisão de Segurança",
+          "checked": false
+        },
+        {
+          "name": "Ronda de Vigilantes",
+          "checked": false
+        },
+        {
+          "name": "APP Escola",
+          "checked": false
+        },
+        {
+          "name": "APP Portaria de Visitantes",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Business intelligence | BI ",
+      "products": [
+        {
+          "name": "BI",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Workflow",
+      "products": [
+        {
+          "name": "Workflow",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Consultoria de Implantação",
+      "products": [
+        {
+          "name": "Consultoria de Implantação",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Software Sob Medida",
+      "products": [
+        {
+          "name": "Software sob Medida",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Universidade Corporativa",
+      "products": [
+        {
+          "name": "Universidade Corporativa",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Cloud Computing",
+      "products": [
+        {
+          "name": "Cloud Computing",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Tecnologia da informação",
+      "products": [
+        {
+          "name": "Segurança",
+          "checked": false
+        },
+        {
+          "name": "Gerenciamento de Banco de Dados",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Consultoria de negócios",
+      "products": [
+        {
+          "name": "Gestão de Pessoas",
+          "checked": false
+        },
+        {
+          "name": "Desempenho Empresarial",
+          "checked": false
+        },
+        {
+          "name": "Riscos e Compliance",
+          "checked": false
+        },
+        {
+          "name": "Tecnologia e Transformação Digital",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Soluções complementares",
+      "products": [
+        {
+          "name": "Auditor Fiscal",
+          "checked": false
+        },
+        {
+          "name": "Análise de Impacto Bloco K",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Recebíveis",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Telecom",
+          "checked": false
+        },
+        {
+          "name": "Documentos eletrônicos eDocs",
+          "checked": false
+        },
+        {
+          "name": "Auditor Fiscal",
+          "checked": false
+        },
+        {
+          "name": "Plataforma de E-commerce",
+          "checked": false
+        },
+        {
+          "name": "Automação da Força de Vendas",
+          "checked": false
+        },
+        {
+          "name": "Agroinfo",
+          "checked": false
+        },
+        {
+          "name": "Gestão de Manutenção de Equipamentos",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Vigilância Portaria e Limpeza | VPL",
+      "products": [
+        {
+          "name": "Vigilância Portaria e Limpeza | VPL",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Varejo Eletromóveis",
+      "products": [
+        {
+          "name": "Varejo Eletromóveis",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Varejo Supermercados",
+      "products": [
+        {
+          "name": "Varejo Supermercados",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Agronegócio",
+      "products": [
+        {
+          "name": "Agronegócio",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "group": "Social",
+      "products": [
+        {
+          "name": "Social",
+          "checked": false
+        }
+      ]
+    }
+  ]
+}

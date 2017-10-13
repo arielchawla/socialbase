@@ -1,0 +1,258 @@
+<nav class="vm-l-header navbar navbar-expand-md navbar-dark fixed-top justify-content-between">
+
+  <div class="nav-item dropdown d-none d-sm-block">
+    <button
+      class="btn btn-link dropdown-toggle"
+      data-toggle="dropdown">
+      left
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">A</a>
+      <a class="dropdown-item" href="#">B</a>
+      <a class="dropdown-item" href="#">C</a>
+    </div>
+  </div>
+
+  <a class="navbar-brand" href="#"><span class="vm-logo badge badge-pill">Venda +</span></a>
+
+  <div class="nav-item dropdown d-none d-sm-block">
+    <button
+      class="btn btn-link dropdown-toggle"
+      data-toggle="dropdown">
+      <img src="https://goo.gl/96rfWf" width="32" class="rounded-circle">
+      right
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <a class="dropdown-item" href="#">X</a>
+      <a class="dropdown-item" href="#">Y</a>
+      <a class="dropdown-item" href="#">Z</a>
+    </div>
+  </div>
+
+  <div class="nav-item dropdown d-sm-none">
+    <button 
+      class="btn btn-link dropdown-toggle" 
+      data-toggle="dropdown">
+      dropdown
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <h6 class="dropdown-header">left</h6>
+      <a class="dropdown-item" href="#">A</a>
+      <a class="dropdown-item" href="#">B</a>
+      <a class="dropdown-item" href="#">C</a>
+      <h6 class="dropdown-header">right</h6>
+      <a class="dropdown-item" href="#">X</a>
+      <a class="dropdown-item" href="#">Y</a>
+      <a class="dropdown-item" href="#">Z</a>
+    </div>
+  </div>
+
+</nav>
+
+<section class="vm-l-main container-fluid ">
+
+  <div class="row">
+
+    <div class="vm-l-side col-12 col-sm-4 col-xl-3">
+
+      <div class="vm-header row d-flex justify-content-between align-items-center">
+        <h3 class="vm-h3">Ordem do pitch:</h3>
+        <a href="#"  ng-click="vm.toggleSearching()">{{ vm.isSearching ? 'Fechar' : 'Gerenciar'}}</a>
+        <button
+          class="btn-link d-flex d-sm-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#bd-docs-nav"
+          aria-controls="bd-docs-nav"
+          aria-expanded="false"
+          aria-label="Toggle docs avigation">
+          <svg
+            class=""
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 30 30"
+            width="30"
+            height="30"
+            focusable="false">
+          <title>Menu</title>
+          <path
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            d="M4 7h22M4 15h22M4 23h22"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="vm-section collapse d-sm-block" id="bd-docs-nav">
+
+          <div class="vm-nav-primary" ng-show="!vm.isSearching">
+            <div class="vm-nav-item vm-nav-item-primary d-flex justify-content-between">
+              <span>Introdução</span>
+            </div>
+            <div class="vm-nav-item vm-nav-item-primary d-flex justify-content-between">
+              <span>Sobre a Senior</span>
+            </div>
+          </div>
+            
+          <div class="vm-nav-secondary">
+
+            <div ng-show="vm.isSearching">
+              <button class="btn btn-ligth btn-sm mt-1 btn-lg-12">Novo produto</button>
+              <button class="btn btn-ligth btn-sm mt-1">Novo agrupador</button><br>
+              <input 
+                ng-model="vm.searchTerm" 
+                type="search" 
+                class="col-12 mt-3 form-control ds-input" 
+                placeholder="Encontre" >
+            </div>
+
+            <div ng-repeat="mapping in vm.products" ng-show="vm.isSearching">
+              <h4 class="vm-h4 mt-4">{{mapping.group}}</h4>
+              <div 
+                class="vm-nav-item vm-nav-item-secondary d-flex justify-content-between"
+                ng-repeat="product in mapping.products | filter : vm.searchTerm"
+                ng-click="product.checked = !product.checked">
+                <span>{{product.name}}</span>
+                <span ng-if="vm.isSearching && product.checked">✔</span>
+              </div>
+            </div>
+
+            <div ng-repeat="mapping in vm.products" ng-show="!vm.isSearching">
+              <div
+                class="vm-nav-item vm-nav-item-secondary d-flex justify-content-between"
+                ng-repeat="product in mapping.products | filter : vm.searchTerm"
+                ng-show="vm.isSearching || product.checked">
+                <span>{{product.name}}</span>
+                <span class="nav-item-side">
+                  <span>▴</span>
+                  <span>▾</span>
+                  <span>✕</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="vm-nav-primary" ng-show="!vm.isSearching">
+            <div class="vm-nav-item vm-nav-item-primary d-flex justify-content-between">
+              <span>Encerramento</span>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="vm-l-content col-12 col-sm-8 col-xl-9 bg-light">
+      <div class="vm-header">
+        <h3 class="vm-h3">Visualize o material:</h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="vm-card col-12 mb-4">
+            <h1 class="pt-4 pl-4">Titulo do artigo</h1>
+            <div class="row p-4">
+              <div class="col-12 col-lg-6">
+                <img src="https://goo.gl/VLTAU5" class="rounded img-fluid float-left mr-4 mb-4">
+              </div>
+              <div class="col-12 col-lg-6">
+                <h3>Reduza custos na gestão de compliance com precisão e segurança</h3>
+                <p>Acima de tudo, é fundamental ressaltar que a contínua expansão de nossa atividade ainda não demonstrou
+                  convincentemente que vai participar na mudança dos conhecimentos estratégicos para atingir a excelência.
+                  Acima de tudo, é fundamental ressaltar que a contínua expansão de nossa atividade ainda não demonstrou
+                  convincentemente que vai participar na mudança dos conhecimentos estratégicos para atingir a excelência.
+                </p>
+              </div>
+            </div>
+            <div class="row p-4">
+              <div class="col-12">
+                <h2 class="mb-4">Clientes de referência</h2>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <img src="https://goo.gl/hNc4gU" class="rounded-circle img-fluid mb-4">
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <img src="https://goo.gl/hNc4gU" class="rounded-circle img-fluid mb-4">
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <img src="https://goo.gl/hNc4gU" class="rounded-circle img-fluid mb-4">
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <img src="https://goo.gl/hNc4gU" class="rounded-circle img-fluid mb-4">
+              </div>
+            </div>
+            <div class="row p-4 bg-light">
+              <div class="col-12">
+                <h3 class="mb-4">Benefícios para o usuário</h3>
+                <p>Geração da ECD e ECF (e-Lalur) totalmente automatizados a partir da contabilidade em uma única base.</p>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card mb-3">
+                  <img class="card-img-top" src="https://goo.gl/LUZyYJ" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card mb-3">
+                  <img class="card-img-top" src="https://goo.gl/LUZyYJ" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card mb-3">
+                  <img class="card-img-top" src="https://goo.gl/LUZyYJ" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row p-4">
+              <div class="col-12">
+                <h2 class="mb-4">Cases de sucesso</h2>
+              </div>
+              <div class="col-12 col-lg-5">
+                <img src="https://goo.gl/ussLmk" class="rounded img-fluid float-left mr-4 mb-4">
+              </div>
+              <div class="col-12 col-lg-7">
+                <h3>Reduza custos na gestão de compliance com precisão e segurança</h3>
+                <p>Acima de tudo, é fundamental ressaltar que a contínua expansão de nossa atividade ainda não demonstrou
+                  convincentemente que vai participar na mudança dos conhecimentos estratégicos para atingir a excelência.
+                  Acima de tudo, é fundamental ressaltar que a contínua expansão de nossa atividade ainda não demonstrou
+                  convincentemente que vai participar na mudança dos conhecimentos estratégicos para atingir a excelência.
+                </p>
+              </div>
+            </div>
+            <div class="row p-4 mb-3">
+              <div class="col-12">
+                <h2 class="mb-4">Mídia</h2>
+              </div>
+              <div class="col-12 col-lg-3">
+                <img class="rounded img-fluid mb-3" src="https://goo.gl/ZLqC4n">
+              </div>
+              <div class="col-12 col-lg-3">
+                <img class="rounded img-fluid mb-3" src="https://goo.gl/E7AdUV">
+              </div>
+              <div class="col-12 col-lg-3">
+                <img class="rounded img-fluid mb-3" src="https://goo.gl/6Vfmcf">
+              </div>
+              <div class="col-12 col-lg-3">
+                <img class="rounded img-fluid mb-3" src="https://goo.gl/VR4CCK">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="vm-l-footer text-right">
+  <button class="btn btn-primary">enviar</button>
+</footer>

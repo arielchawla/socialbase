@@ -1,0 +1,35 @@
+.pg-codeguide {
+  padding: 10%;
+  background: #3D7DD8;
+}
+
+.pg-codeguide .card {
+  box-shadow: 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.pg-codeguide h1,
+.pg-codeguide h2,
+.pg-codeguide > p {
+  color: white;
+  text-shadow: 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.pg-codeguide h1 {
+  margin: 6rem 0 1rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: -.3rem;
+}
+
+.pg-codeguide h2 {
+  margin: 6rem 0 2rem;
+  font-size: 4rem;
+  letter-spacing: -.5rem;
+}
+
+.pg-codeguide > p { font-size: 1.3rem; }
+
+.pg-codeguide .toggle-lang {
+  color: white;
+  opacity: .5;
+}

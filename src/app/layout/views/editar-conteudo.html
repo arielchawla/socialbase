@@ -1,0 +1,129 @@
+<nav class="vm-l-header navbar navbar-expand-md navbar-dark fixed-top justify-content-between">
+
+  <div class="nav-item dropdown d-none d-sm-block">
+    <button
+      class="btn btn-link dropdown-toggle"
+      data-toggle="dropdown">
+      Central Venda+
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#" ui-sref="criar-pitch">Central de Venda+</a>
+      <a class="dropdown-item" href="#" ui-sref="materiais">Materiais</a>
+      <a class="dropdown-item" href="#" ui-sref="meus-pitchs">Meus Pitchs</a>
+    </div>
+  </div>
+
+  <a class="navbar-brand" href="#"><span class="vm-logo badge badge-pill">Venda +</span></a>
+
+  <div class="nav-item dropdown d-none d-sm-block">
+    <button
+      class="btn btn-link dropdown-toggle"
+      data-toggle="dropdown">
+      <img src="https://goo.gl/96rfWf" width="32" class="rounded-circle">
+      Vanessa Ferreira
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <a class="dropdown-item" href="#">X</a>
+      <a class="dropdown-item" href="#">Y</a>
+      <a class="dropdown-item" href="#">Z</a>
+    </div>
+  </div>
+
+  <div class="nav-item dropdown d-sm-none">
+    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+      menu
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <h6 class="dropdown-header">Central Venda+</h6>
+      <a class="dropdown-item" href="#" ui-sref="criar-pitch">Central de Venda+</a>
+      <a class="dropdown-item" href="#" ui-sref="materiais">Materiais</a>
+      <a class="dropdown-item" href="#" ui-sref="meus-pitchs">Meus Pitchs</a>
+      <h6 class="dropdown-header">right</h6>
+      <a class="dropdown-item" href="#">X</a>
+      <a class="dropdown-item" href="#">Y</a>
+      <a class="dropdown-item" href="#">Z</a>
+    </div>
+  </div>
+
+</nav>
+
+<section class="vm-l-main container-fluid ">
+
+  <div class="row justify-content-center">
+
+    <section class="vm-l-content col-11 col-lg-8 pt-5 pb-4">
+      <div class="row justify-content-between">
+        <nav class="breadcrumb col-12 col-xl-9">
+          <a class="breadcrumb-item" href="#" ui-sref="gestao-pitch">Pernambucanas</a>
+          <a class="breadcrumb-item" href="#">Compliance</a>
+          <span class="breadcrumb-item active" href="#">Editando conteúdo</span>
+        </nav>
+        <div>
+          <button class="btn btn-outline-secondary btn-lg">Excluir material</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="vm-l-content col-11 col-lg-8">
+      <div class="row vm-card vm-card-edit align-items-center pt-3 pb-3 mb-4">
+
+        <div class="col-12 col-lg-5 text-center">
+          <img src="https://goo.gl/ussLmk" class="rounded img-fluid">
+        </div>
+      
+        <div class="col-12 col-lg-7">
+          <br class="d-lg-none">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Título</label>
+            <input type="email" class="form-control" placeholder="Defina um titulo..." value="Gestão Estratégica">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Conteúdo</label>
+            <textarea class="form-control" rows="3" placeholder="Insira o conteúdo...">Percebemos, cada vez mais, que o entendimento das metas propostas representa uma abertura para a melhoria dos procedimentos normalmente adotados.
+            </textarea>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="vm-l-content col-12 col-lg-8 mb-4">
+      <div class="row">
+        <div class="col-12 col-sm-6 pt-3">
+          <label>Título do link complementar</label><br>
+          <input type="text" class="form-control" placeholder="Insira um nome">
+          <small class="form-text text-muted">*opcional</small>
+        </div>
+        <div class="col-12 col-sm-6 pt-3">
+          <label>Link complementar</label><br>
+          <input type="text" class="form-control" placeholder="Insira um nome">
+          <small class="form-text text-muted">*opcional</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="vm-l-content col-12 col-lg-8 pb-4">
+      <h2>Gerenciamento de tags</h2>
+      <p>Adicione as tags para configurar o seu material</p>
+      <div class="p-3">
+        <h4>Dores relacionadas</h4>
+        <span class="badge badge-pill mb-1 badge-secondary pt-2 pb-2 pr-3 pl-3">Despesas</span>
+        <span class="badge badge-pill mb-1 badge-secondary pt-2 pb-2 pr-3 pl-3">Desperdícios</span>
+        <span class="badge badge-pill mb-1 badge-secondary pt-2 pb-2 pr-3 pl-3">Gestão de pessoas</span>
+        <span class="badge badge-pill mb-1 badge-secondary pt-2 pb-2 pr-3 pl-3">Gestão de recursos</span>
+        <span class="badge badge-pill mb-1 badge-light pt-2 pb-2 pr-3 pl-3">Adicionar novo</span>
+      </div>
+      <div class="p-3">
+        <h4>Dores relacionadas</h4>
+        <span class="badge badge-pill mb-1 badge-secondary pt-2 pb-2 pr-3 pl-3">Todos</span>
+        <span class="badge badge-pill mb-1 badge-light pt-2 pb-2 pr-3 pl-3">Adicionar novo</span>
+      </div>
+      <div class="p-3">
+        <button class="btn btn-primary">Salvar material</button>
+        <button class="btn btn-secondary">Cancelar</button>
+      </div>
+    </section>
+
+  </div>
+
+</section>

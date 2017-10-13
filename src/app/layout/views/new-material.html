@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Profile</title>
+
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">	 -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<!-- <link href="css/style.css" rel="stylesheet"> -->
+  </head>
+  
+<body>
+
+<section class="profile_sec" style="background:none;">
+	<div class="container">
+		<div class="perfil_div mater_div">
+			<h4><i class="fa fa-angle-left" aria-hidden="true"></i> Materiais</h4>
+			<p>Gerenciador de materias > <b>Cadastro de material</b></p>
+		</div>
+		<div class="drop_div">
+			<div class="dropdown">
+			  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Agrupador
+				<p>Selecione</p>
+				<span class="caret"></span>		
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				<li>home</li>
+				<li>home</li>
+				<li>home</li>
+			  </ul>
+			</div>
+			
+			<div class="dropdown">
+			  <button id="dLabel5" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Produto
+				<p>Selecione</p>
+				<span class="caret"></span>		
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dLabel5">
+				<li>home</li>
+				<li>home</li>
+				<li>home</li>
+			  </ul>
+			</div>
+			
+			<div class="dropdown">
+			  <button id="dLabel6" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Tipo de material
+				<p>Selecione</p>
+				<span class="caret"></span>		
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dLabel6">
+				<li>home</li>
+				<li>home</li>
+				<li>home</li>
+			  </ul>
+			</div>
+			<a class="active continuar" ui-sref="create-materials" title="">Continuar materiais</a>
+			<a ui-sref="criar-pitch" title="">Cancelar</a>
+		</div>		
+	</div>		
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="js/jquery.flexslider-min.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
+
+  </body>
+</html>
+
+
+<style>
+body{
+	padding: 0;
+    margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+img{
+	max-width:100%;
+	transition:ease-in-out 0.5s;
+}
+a{text-decoration:none !important;transition:ease-in-out 0.5s;}
+header.header_sec {
+    background: #ccc;
+    padding: 10px 0;
+	box-shadow: 0px 1px 1px 0px;
+	    position: relative;
+}
+.phone_div button {
+    background: none;
+    border: none;
+}
+.phone_div button .fa {
+    color: #0d6fd8;
+	padding: 0;
+	font-size: 22px;
+}
+.phone_div button .fa-plus {
+    font-size: 10px;
+    color: #666;
+}
+.venda_btn button .fa-angle-down {
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.venda_btn button i.fa.fa-home {
+	margin-right: 5px;
+}
+.venda button {
+    background: #ececec;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.phone_div span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.profile_img .fa-angle-down {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.profile_sec {
+    padding: 20px 0 40px;
+	background: #e6e6e6;
+}
+.perfil_div h4 {
+    color: #0d6fd8;
+    margin-top: 0;
+}
+.border_dotted {
+	padding: 25px 40px;
+    border: 1px dashed #ccc;
+	padding: 25px 40px 25px 30px;
+}
+.round_img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+	margin: 0 auto;
+}
+.perfil_div h4.ola_hd {
+    color: #666;
+    border-bottom: 2px solid #0d6fd8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.ola_div {
+    margin-top: 25px;
+}
+.ola_div p {
+	color: #333;
+    border-bottom: 2px solid #0d6fd8;
+    padding-bottom: 10px;
+}
+.ola_div a {
+    display: inline-block;
+    padding: 12px 55px;
+    background:none;
+    color: #0d6fd8;
+}
+.ola_div a.active {
+    display: inline-block;
+    padding: 12px 55px;
+    background: #0d6fd8;
+    color: #fff;
+}
+.ola_div a:hover {
+	background: #0d6fd8;
+    color: #fff
+}
+.telefone h4 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 39px;
+}
+.telefone h4 span {
+    color: #a0a0a0;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* 13-oct-2017 css start here*/
+.drop_div {
+    max-width: 300px;
+    width: 100%;
+	margin-top: 20px;
+}
+.drop_div button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+	font-size: 14px;
+    font-weight: 500;
+	padding: 0 10px 0 0;
+}
+.mater_div h4, .mater_div p, .drop_div button, .titulo_div label, .tab_div2 h4, .tags_div h2, .tags_div h5, .tags_div ul li a, .input_file label {
+    color: #01a997;
+}
+.drop_div button p {
+    font-size: 14px;
+    color: #999;
+    font-weight: normal;
+	margin-bottom: 5px;
+}
+.drop_div button span.caret {
+    float: right;
+	margin-top: -22px;
+    display: block;
+    border-top: 6px dashed;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    color: #666;
+}
+.drop_div button:focus{
+	outline:none;
+}
+.drop_div ul.dropdown-menu {
+    width: 100%;
+}
+.drop_div ul.dropdown-menu li {
+    padding: 5px 10px;
+}
+.drop_div .dropdown {
+    margin-bottom: 20px;
+}
+.drop_div a {
+    display: inline-block;
+    padding: 7px 25px;
+    background: #fff;
+    color: #01a997;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 1px #dadada;
+	    border: 1px solid #fff;
+}
+.drop_div a.active {    
+    background: #01a997;
+    color: #fff;
+}
+.drop_div a.continuar{
+    margin-right: 14px;
+}
+.drop_div a:hover {
+    background: #01a997;
+    color: #fff;
+}
+.titulo_div input.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+	box-shadow:none;
+}
+.tab_div2 h4 {
+    font-size: 15px;
+}
+.tab_div2 .telefone h4 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0;
+}
+.tab_div2 .telefone p {
+    color: #999;
+    font-weight: normal;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.tab_div2 .telefone span {
+    color: #cacaca;
+    font-size: 12px;
+}
+.tab_div2 {
+    margin-top: 15px;
+}
+.tags_div h2 {
+    font-weight: normal;
+    font-size: 28px;
+}
+.tags_div p{
+	color: #999;
+	margin: 15px 0 25px;
+}
+.tags_div h5 {
+    font-size: 16px;
+}
+.tags_div ul li a {
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: 500;
+}
+.input_file {
+    background: #f2f2f2;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+	position: relative;
+}
+.input_box{
+	padding: 15px;
+}
+.input_file .form-group {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.input_file .form-group input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.input_file p {
+    text-align: center;
+    color: #999;
+}
+.input_file label {
+    display: block;
+}
+.input_file img {
+    width: 33px;
+}
+.border_dotted_div {
+    padding: 15px;
+}
+.titulo_div {
+    margin-top: 25px;
+}
+
+
+/* 13-oct-2017 css end here*/
+
+@media (max-width:1200px){
+	.round_img {
+		width: 200px;
+		height: 200px;
+	}
+}
+@media (max-width:991px){
+	.ola_div a.active {
+		padding: 12px 45px;
+	}
+}
+@media (max-width:767px){
+	.telefone h4 {
+		padding-bottom: 20px;
+	}
+	.border_dotted{
+		padding: 25px 30px;
+	}
+}
+
+@media (max-width:375px){
+	.drop_div a{
+		padding: 7px 22px;
+	}
+	.mater_div p {
+		font-size: 13px;
+	}
+}
+
+
+
+
+</style>

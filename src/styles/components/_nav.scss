@@ -1,0 +1,49 @@
+.vm-nav-secondary {
+	padding:$base-space * .5;
+	background-color: #F2F2F2;
+}
+
+.vm-nav-item {
+	padding: $base-space *.5 $base-space;
+	border: 1px solid transparent;
+	font-size: .9rem;
+	font-weight: bold;
+	
+	&:focus {
+		outline: none;
+	}
+}
+
+.nav-item-side {
+	display:  flex;
+	align-items: center;
+	justify-content: space-between;
+	min-width: 2.5rem;
+	color: #999;
+	cursor: pointer;
+	opacity: 0;
+	transition: .3s opacity;
+}
+
+.vm-nav-item-primary {
+	margin-bottom: $base-space * .1;
+	background-color: #FBFCFC;
+	border-radius: $base-radius;
+} 
+
+.vm-nav-item-secondary {
+	margin-bottom: $base-space *.5;
+	border: 1px solid #EAEAEA;
+	background-color: #FBFCFC;
+	border-radius: $base-radius;
+
+	&:hover {
+		.nav-item-side {
+			opacity: 1;
+		}
+	}
+
+	&:focus {
+		color: white;
+	}
+}

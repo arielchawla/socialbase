@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+
+
+	<section class="profile_sec">
+		<div class="container">
+			<div class="perfil_div">
+				<h4><i class="fa fa-angle-left" aria-hidden="true"></i> Perfil</h4>
+				<h4>Perfil</h4>
+			</div>
+			<div class="border_dotted">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="round_img">
+							<img src="{{au.userPhoto}}" alt="">
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-12">
+						<div class="ola_div perfil_div">
+							<h4>{{au.userName}}</h4>
+							<h4 class="ola_hd">{{au.userName}}</h4>
+							<h4>{{au.userName}}</h4>
+							<p>{{au.userPresentation}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab_div">
+				<div class="row">
+					<div class="col-md-5 col-sm-5 col-xs-12">
+						<div class="ola_div perfil_div">
+							<h4>Telefone de Contato</h4>
+							<h4 class="ola_hd">{{au.userPhone}}</h4>
+							<a class="active" href="#" title="">Salvar</a>
+							<a href="#" title="">Voltar</a>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-5 col-xs-12">
+						<div class="ola_div perfil_div telefone">
+							<h4>Telefone de Contato <span>Voltar</span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+</body>
+
+</html>
+<style>
+	body {
+		padding: 0;
+		margin: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	img {
+		max-width: 100%;
+		transition: ease-in-out 0.5s;
+	}
+
+	a {
+		text-decoration: none !important;
+		transition: ease-in-out 0.5s;
+	}
+
+	header.header_sec {
+		background: #ccc;
+		padding: 10px 0;
+		box-shadow: 0px 1px 1px 0px;
+		position: relative;
+	}
+
+	.phone_div button {
+		background: none;
+		border: none;
+	}
+
+	.phone_div button .fa {
+		color: #0d6fd8;
+		padding: 0;
+		font-size: 22px;
+	}
+
+	.phone_div button .fa-plus {
+		font-size: 10px;
+		color: #666;
+	}
+
+	.venda_btn button .fa-angle-down {
+		margin-left: 30px;
+		vertical-align: middle;
+	}
+
+	.venda_btn button i.fa.fa-home {
+		margin-right: 5px;
+	}
+
+	.venda button {
+		background: #ececec;
+		padding: 5px 20px;
+		border-radius: 20px;
+	}
+
+	.phone_div span {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		overflow: hidden;
+		vertical-align: middle;
+	}
+
+	.profile_img .fa-angle-down {
+		vertical-align: middle;
+		margin-left: 5px;
+	}
+
+	.profile_sec {
+		padding: 20px 0 40px;
+		background: #e6e6e6;
+	}
+
+	.perfil_div h4 {
+		color: #0d6fd8;
+		margin-top: 0;
+	}
+
+	.border_dotted {
+		padding: 25px 40px;
+		border: 1px dashed #ccc;
+		padding: 25px 40px 25px 30px;
+	}
+
+	.round_img {
+		width: 300px;
+		height: 300px;
+		border-radius: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	.perfil_div h4.ola_hd {
+		color: #666;
+		border-bottom: 2px solid #0d6fd8;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+	}
+
+	.ola_div {
+		margin-top: 25px;
+	}
+
+	.ola_div p {
+		color: #333;
+		border-bottom: 2px solid #0d6fd8;
+		padding-bottom: 10px;
+	}
+
+	.ola_div a {
+		display: inline-block;
+		padding: 12px 55px;
+		background: none;
+		color: #0d6fd8;
+	}
+
+	.ola_div a.active {
+		display: inline-block;
+		padding: 12px 55px;
+		background: #0d6fd8;
+		color: #fff;
+	}
+
+	.ola_div a:hover {
+		background: #0d6fd8;
+		color: #fff
+	}
+
+	.telefone h4 {
+		border-bottom: 2px solid #ccc;
+		padding-bottom: 39px;
+	}
+
+	.telefone h4 span {
+		color: #a0a0a0;
+		font-size: 14px;
+		margin-left: 20px;
+	}
+
+	@media (max-width:1200px) {
+		.round_img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	@media (max-width:991px) {
+		.ola_div a.active {
+			padding: 12px 45px;
+		}
+	}
+
+	@media (max-width:767px) {
+		.telefone h4 {
+			padding-bottom: 20px;
+		}
+		.border_dotted {
+			padding: 25px 30px;
+		}
+	}
+</style>

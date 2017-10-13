@@ -1,0 +1,137 @@
+<div ng-if="vm.currentRoute">
+  <nav class="vm-l-header navbar navbar-expand-md navbar-dark fixed-top justify-content-between">
+    <div class="nav-item dropdown d-none d-sm-block">
+      <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+      Central Venda+
+    </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#" ui-sref="criar-pitch">Central de Venda+</a>
+        <a class="dropdown-item" href="#" ui-sref="materiais">Materiais</a>
+        <a class="dropdown-item" href="#" ui-sref="meus-pitchs">Meus Pitchs</a>
+      </div>
+    </div>
+    <a class="navbar-brand" href="#"><span class="vm-logo badge badge-pill">Venda +</span></a>
+    <div class="nav-item dropdown d-none d-sm-block">
+      <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+      <img src="https://goo.gl/96rfWf" width="32" class="rounded-circle">
+      Vanessa Ferreira
+    </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">X</a>
+        <a class="dropdown-item" href="#">Y</a>
+        <a class="dropdown-item" href="#">Z</a>
+      </div>
+    </div>
+
+    <div class="nav-item dropdown d-sm-none">
+      <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+      menu
+    </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <h6 class="dropdown-header">Central Venda+</h6>
+        <a class="dropdown-item" href="#" ui-sref="criar-pitch">Central de Venda+</a>
+        <a class="dropdown-item" href="#" ui-sref="materiais">Materiais</a>
+        <a class="dropdown-item" href="#" ui-sref="meus-pitchs">Meus Pitchs</a>
+        <h6 class="dropdown-header">right</h6>
+        <a class="dropdown-item" href="#">X</a>
+        <a class="dropdown-item" href="#">Y</a>
+        <a class="dropdown-item" href="#">Z</a>
+      </div>
+    </div>
+  </nav>
+</div>
+<section class="vm-l-main container-fluid ">
+  <div class="row justify-content-center">
+    <section class="vm-l-content col-12 col-lg-8 pt-5 pb-5">
+      <h2>Crie o pitch ideal sem complicações!</h2>
+      <div class="row">
+        <div class="col-12 col-sm-6 pt-3">
+          <label>Nome do pitch</label><br>
+          <input type="text" class="form-control" placeholder="Insira um nome">
+        </div>
+        <div class="col-12 col-sm-6 pt-3">
+          <label>Segmento da empresa</label><br>
+          <select class="form-control">
+            <option value="" disabled selected>Selecione</option>
+            <option>Varejo</option>
+            <option>Indústria</option>
+            <option>Agronegócio</option>
+            <option>Importação/Exportação</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="row justify-content-center bg-light">
+
+    <section class="vm-l-content col-12 col-lg-8 pt-5 pb-5">
+      <h2>Dores do cliente</h2>
+      <p>Selecione as dores que o seu cliente tem para montar o pitch. Para facilitar o processo, nós já mapeamos algumas dores
+        mais comuns no segmento que você selecionou.</p>
+      <br>
+      <div class="p-3">
+
+        <div class="row justify-content-between mb-md-3">
+          <span class="col-12 col-md-6 col-xl-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Selecionar todas</button>
+          </span>
+        </div>
+
+        <div class="row justify-content-between mb-md-3">
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor A</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor B</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor C</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor D</button>
+          </span>
+        </div>
+
+        <div class="row justify-content-between mb-md-3">
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor E</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor F</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor G</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor H</button>
+          </span>
+        </div>
+
+        <div class="row justify-content-between mb-md-3">
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor I</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor J</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor K</button>
+          </span>
+          <span class="col-12 col-sm-3 mb-3">
+            <button class="btn btn-outline-secondary btn-lg btn-block">Dor L</button>
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</section>
+
+<footer class="vm-l-footer row align-items-center justify-content-center">
+  <div class="col-12 col-lg-8 text-right mr-5">
+    <button class="btn btn-primary" ui-sref="new-material">Criar nova material</button>
+  </div>
+</footer>

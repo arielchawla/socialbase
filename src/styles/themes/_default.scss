@@ -1,0 +1,264 @@
+$base-space: 1rem;
+$base-radius: .25rem;
+
+.vm-logo {
+  padding: .6rem 1.2rem;
+  color: #999;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: white;
+}
+
+.vm-relative {
+	position: relative;
+}
+
+.vm-img-dropdown {
+	position: absolute;
+	right: 1rem;
+	top: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+.nav-item .dropdown-toggle {
+	cursor: pointer;
+	color: #999;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0;
+}
+
+.nav-item .dropdown-toggle i:before {
+	color: $blue !important;
+	font-size: 1rem;
+}
+
+.nav-item .dropdown-toggle:hover {
+	text-decoration: none;
+}
+
+.nav-item .dropdown-toggle::after {
+	color: $blue !important;
+}
+
+h1, h2,
+label {
+	color: $blue;
+}
+h1,
+h2,
+label {
+	font-weight: 600;
+}
+
+input,
+select {
+	line-height: 1.2rem !important;
+	border-radius: 0 !important;
+	border-top: 0 !important;	
+	border-right: 0 !important;	
+	border-left: 0 !important;	
+}
+
+.card {
+	border: 0; 
+	text-align: center;
+	font-weight: 600;
+}
+
+.vm-button-edit {
+	color: #999;
+	border-radius: 1rem;
+	padding: .5rem .8rem;
+	font-size: .75rem;
+	line-height: .75rem;
+	box-shadow: 0 0 4px 0 #D3D3D3;
+	border: none;
+	background: none;
+}
+
+
+.vm-button-edit i:before {
+	color: #999;
+}
+
+.list-group .list-group {
+	padding: .7rem .7rem .2rem;
+	background-color: #f2f2f2;
+}
+
+.list-group-item-action {
+	color: $blue;
+	border: none;
+	background-color: #FBFCFC;
+	margin-bottom: .1rem;
+}
+
+.list-group-item-action.active {
+	background-color: $blue !important;
+}
+
+.list-group-item-action:hover {
+	background-color: lighten($blue, 65%) !important;
+}
+
+.list-group .list-group .list-group-item-action {
+	border-radius: .275rem;
+	margin-bottom: .5rem;
+	font-weight: 600;
+	color: $blue;
+	border: 1px solid #EAEAEA;
+}
+
+.list-group .list-group-item-action {
+	border-radius: 0;
+}
+
+.list-group .list-group .list-group-item-action.active {
+	color: white;
+	box-shadow: inset 4px 0 0 lighten($blue, 5%), 0 0 4px #d3d3d3;
+}
+
+.list-group .list-group-item-action.active:hover  {
+	background: darken($blue, 5%) !important;
+}
+
+.list-group .list-group-item-action i:before {
+	margin-right: .5rem;
+	color: $blue;
+	font-size: 1.1rem;
+	vertical-align: sub;
+}
+
+.list-group .list-group-item-action.active i:before {
+	color: white;
+}
+
+.list-group .list-group .list-group-item-action.add {
+	background: none;
+	border: 2px dashed #d3d3d3; 
+}
+
+h5 big {
+	font-size: 3rem;
+	font-weight: bold;
+	color: $blue;
+}
+
+i.big:before {
+	font-size: 4rem;
+	color: $blue;
+}
+
+.f-2 {
+	font-size: 1.3rem;
+}
+
+.resume {
+	z-index: 1;
+	background-color: white;
+}
+
+body {
+  padding: 4rem 0;
+}
+
+.topbar-2x {
+  padding: 2rem 0;  
+}
+
+.vm-l-header{
+  min-height: 4rem;
+  background-color: #F4F3F3;
+  box-shadow: 0 2px 2px rgba(115,115,115,0.5);
+}
+
+.vm-l-header .navbar,
+.vm-l-header .resume,
+.vm-l-header .resume .row {
+	height: 4rem;
+}
+
+.vm-l-header .resume h3 {
+	margin: 0;
+}
+.vm-l-header .resume span span,
+.vm-l-header .resume span strong {
+	display: block;
+}
+
+.vm-l-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 4rem;
+  background-color: #F4F3F3;
+  box-shadow: 0 -2px 2px rgba(115,115,115,0.5);
+  z-index: 2;
+}
+.vm-l-side 	{
+  box-shadow: 2px 0 4px #D3D3D3;
+  padding: 0;
+  z-index: 1;
+}
+
+.badge-dor {
+	background-color: white;
+	color: $blue;
+	border:1px solid $blue;
+}
+
+
+.vm-side-menu-item {
+	float: right;
+	opacity: 0;
+	transition: opacity .2s;
+
+	i:before {
+		margin: 0 !important;
+		color: #999 !important;
+	}
+}
+
+.list-group-item.active .vm-side-menu-item i:before {
+	color: white !important;
+}
+
+.list-group-item:hover .vm-side-menu-item {
+	opacity: 1;
+}
+
+.vm-side-editing .list-group-item {
+	.icon-navigation-next-12 {
+		display: none;
+	}
+	&.active {
+		.icon-cog-box {
+			display: none;
+		}
+		.icon-navigation-next-12 {
+			display: block;
+		}
+	}
+}
+
+.vm-side-editing .list-group-item.active .vm-side-menu-item i:before {}
+
+.vm-input-search {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: .3rem;
+
+	input {
+		border: none;
+	}
+
+	i {
+		margin-left: 1rem;
+	}
+}
